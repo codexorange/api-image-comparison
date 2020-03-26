@@ -9,8 +9,9 @@ router.post("/comparison", async (req, res) => {
 
   const { image, imageToCompare } = req.files;
 
-  const diff = await resemble(image.data)
+  resemble(image.data)
     .compareTo(imageToCompare.data)
+    .ignoreAntialiasing()
     .onComplete(data => {
       res.send(data);
     });
