@@ -1,0 +1,19 @@
+{
+  "name": "fps-app-ws-imagecomparison",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "mz": "^2.7.0",
+    "nodemon": "^2.0.2",
+    "resemblejs": "^3.2.4"
+  }
+}
